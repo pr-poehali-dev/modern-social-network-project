@@ -4,18 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Separator } from '@/components/ui/separator';
 import Icon from '@/components/ui/icon';
-
-interface User {
-  id: number;
-  username: string;
-  display_name: string;
-  bio: string;
-  avatar_url: string;
-  followers_count: number;
-  following_count: number;
-  posts_count: number;
-  is_verified: boolean;
-}
+import { User } from '@/types';
 
 interface SidebarProps {
   currentUser: User | null;

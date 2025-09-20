@@ -4,15 +4,11 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
+import { RegisterData } from '@/types';
 
 interface AuthFormProps {
   onLogin: (username: string, password: string) => void;
-  onRegister: (data: {
-    username: string;
-    email: string;
-    password: string;
-    display_name: string;
-  }) => void;
+  onRegister: (data: RegisterData) => void;
 }
 
 const AuthForm: React.FC<AuthFormProps> = ({ onLogin, onRegister }) => {

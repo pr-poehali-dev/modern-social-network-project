@@ -4,29 +4,7 @@ import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import MainContent from '@/components/MainContent';
 import MobileNavigation from '@/components/MobileNavigation';
-
-interface User {
-  id: number;
-  username: string;
-  display_name: string;
-  bio: string;
-  avatar_url: string;
-  followers_count: number;
-  following_count: number;
-  posts_count: number;
-  is_verified: boolean;
-}
-
-interface Post {
-  id: number;
-  user_id: number;
-  content: string;
-  image_url?: string;
-  likes_count: number;
-  comments_count: number;
-  created_at: string;
-  user?: User;
-}
+import { User, Post } from '@/types';
 
 const SocialNetwork: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);

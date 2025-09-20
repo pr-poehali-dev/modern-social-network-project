@@ -4,15 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Icon from '@/components/ui/icon';
-
-interface User {
-  id: number;
-  username: string;
-  display_name: string;
-  bio: string;
-  avatar_url: string;
-  followers_count: number;
-  following_count: number;
+import { User } from '@/types';
   posts_count: number;
   is_verified: boolean;
 }
