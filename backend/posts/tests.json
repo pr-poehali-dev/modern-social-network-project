@@ -1,0 +1,55 @@
+{
+  "tests": [
+    {
+      "name": "Test get posts feed",
+      "method": "GET",
+      "queryParams": {
+        "limit": "10",
+        "offset": "0"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "posts": "array",
+        "total": "number"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test create new post",
+      "method": "POST",
+      "body": {
+        "user_id": 1,
+        "content": "Test post content",
+        "image_url": "https://example.com/image.jpg"
+      },
+      "expectedStatus": 201,
+      "expectedBody": {
+        "success": true,
+        "post": {
+          "id": "number",
+          "content": "Test post content",
+          "user": {
+            "username": "string",
+            "display_name": "string"
+          }
+        }
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test like post",
+      "method": "PUT",
+      "body": {
+        "post_id": 1,
+        "user_id": 2,
+        "action": "like"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "likes_count": "number"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
