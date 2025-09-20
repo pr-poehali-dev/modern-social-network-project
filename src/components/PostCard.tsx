@@ -4,13 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Icon from '@/components/ui/icon';
 import { User, Post } from '@/types';
-  content: string;
-  image_url?: string;
-  likes_count: number;
-  comments_count: number;
-  created_at: string;
-  user?: User;
-}
 
 interface PostCardProps {
   post: Post;
