@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Icon from '@/components/ui/icon';
 import { User } from '@/types';
-}
 
 interface HeaderProps {
   currentUser: User | null;

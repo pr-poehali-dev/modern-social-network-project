@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Icon from '@/components/ui/icon';
 import { User, Post } from '@/types';
-  user_id: number;
   content: string;
   image_url?: string;
   likes_count: number;

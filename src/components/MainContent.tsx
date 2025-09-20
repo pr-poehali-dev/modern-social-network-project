@@ -7,17 +7,6 @@ import CreatePost from './CreatePost';
 import PostCard from './PostCard';
 import { User, Post } from '@/types';
 
-interface Post {
-  id: number;
-  user_id: number;
-  content: string;
-  image_url?: string;
-  likes_count: number;
-  comments_count: number;
-  created_at: string;
-  user?: User;
-}
-
 interface MainContentProps {
   activeTab: string;
   currentUser: User | null;

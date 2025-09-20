@@ -5,9 +5,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Icon from '@/components/ui/icon';
 import { User } from '@/types';
-  posts_count: number;
-  is_verified: boolean;
-}
 
 interface CreatePostProps {
   currentUser: User | null;
