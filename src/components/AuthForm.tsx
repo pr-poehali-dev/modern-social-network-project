@@ -71,9 +71,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ onLogin, onRegister }) => {
                 >
                   Войти
                 </Button>
-                <div className="text-center text-sm text-gray-600">
-                  Тест: используйте <code className="bg-gray-100 px-1 rounded">maria_smile</code>, <code className="bg-gray-100 px-1 rounded">alex_dev</code> или <code className="bg-gray-100 px-1 rounded">natasha_art</code>
-                </div>
+
               </CardContent>
             </Card>
           </TabsContent>
